@@ -1,0 +1,76 @@
+h1 {
+    text-align: center;
+    color:rgb(145, 5, 5);
+    font-weight: lighter;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0;
+    color: rgb(48, 45, 45);
+    font-weight: bold;
+    color: blue;
+
+}
+
+form {
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-style: double;
+    position: relative;
+    color:rgb(2, 2, 66);
+    font-weight: bold;
+    border-color: orangered;
+
+}
+
+label {
+    display: block;
+    width: 100%;
+}
+
+input {
+    display: inline;
+    border-radius: 15px;
+    padding: 14px 20px;
+    margin: 8px 0;
+}
+
+input:focus {
+    background-color: rgb(248, 233, 150);
+}
+
+select {
+    width: auto;
+}
+
+textarea {
+    display: block;
+    padding: 20px; ;
+    border-radius: 15px 50px;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 15px;
+    color: rgb(2, 2, 66);
+}
+
+.btn:hover {
+    background-color: rgb(230, 117, 42);
+    color: rgb(255, 255, 255);
+}
+
+fieldset {
+    color: blueviolet;
+    border-color: brown;
+    width: auto;
+}
+
+legend {
+    color: blue;
+    font-weight: bold;
+}

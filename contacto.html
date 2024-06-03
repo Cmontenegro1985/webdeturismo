@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet"  href="css/estilo-formulario.css">
+    <script src="js/validacion.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="icon" type="image/jpg" sizes="16x16 32x32 48x48" href="img/favicon.ico">
+	<title>Complejo Alpino</title>
+	<style>
+		
+		.imgside {
+			width: 100%;
+			height: auto;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+		<header class="header">
+			
+
+<nav class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="quienes.html">Nosotros</a>
+  <a href="servicios.html">Servicios</a>
+  <a href="contacto.html" class="active">Contacto</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i>
+  </a>
+ <img class="logo" src="img/logoredondo.png" alt="logo"> 
+ </nav>
+
+
+
+		</header>
+		<main class="contenido">
+			
+			 <article>
+        <h1>Contacto y Reservas</h1>
+        <form action="#" method="GET" onsubmit="return validar();">
+            <h3>Ingresa tus datos</h3>
+            
+            <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" >
+                <label for="direccion">Direccion</label>
+                <input type="text" name="direccion" id="direccion">
+                <label for="ciudad">Ciudad</label>
+                <input type="text" name="ciudad" id="ciudad">
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="+15">
+                <label for="mail">Correo electronico/E-mail</label>
+                <input type="email" name="mail" id="mail" placeholder="ejemplocabaña@ejemplo.com">
+    
+                <label for="ingreso">Fecha de ingreso</label>
+                <input type="date" name="ingreso" id="ingreso">
+                <label for="egreso">Fecha de salida</label>
+                <input type="date" name="egreso" id="egreso">
+        
+            <label for="cantidadPersonas">Cuantas personas se alojaran? <select name="cantidadPersonas" id="cantidadPersonas">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select> </label> 
+            
+    
+            <p>Tiene mascotas?</p>
+            
+            <label for="mascotasSi">Si<input type="radio" id="mascotasSi" name="mascotas" value="Si"></label>
+            <label for="mascotasNo">No<input type="radio" id="mascotasNo" name="mascotas" value="No"></label>
+           
+            
+            
+            <p>Pedido especial (opcional)</p>
+            <p>Los pedidos especiales no se pueden garantizar, pero el alojamiento intentará hacer todo lo posible patra
+                su bienestar</p>
+            <textarea name="especial" id="especial" cols="30" rows="10"></textarea>
+            <p>Subir una imagen de los huespedes</p>
+            <input type="file" name="foto" id="foto" ><br>
+            <input type="checkbox" name="terminos" id="terminos" required> Acepto los Terminos y Condiciones><br>
+            <input class="btn" type="reset" value="Borrar todo">
+            <input class="btn" type="submit" value="Enviar"> <br>  
+        </form>
+    </article>
+
+
+		</main>
+
+		<aside class="sidebar">
+			<figure>
+				<a href="imagenes/paisajeventana.jpg" target="_blank" ><img class="imgside" src="imagenes/paisajeventana.jpg" alt="vista_desde_la_ventana" ></a></figure>
+				<h4>Hermosas vistas</h4>
+				<figure><a href="imagenes/kayakformosa.jpg" target="_blank"><img class="imgside" src="imagenes/kayakformosa.jpg" alt="formosa"></a></figure>
+				<h4>Turismo en kayak</h4>
+				<figure><a href="imagenes/tvucuman.jpg" target="_blank"><img class="imgside" src="imagenes/tvucuman.jpg" alt="tucuman"></a></figure>
+				<h4>Parques nacionales</h4>
+				<figure><a href="imagenes/trekkinglarioja.jpg" target="_blank"><img class="imgside" src="imagenes/trekkinglarioja.jpg" alt="larioja"></a></figure>
+				<h4>Actividades al aire libre</h4>
+				<figure><a href="imagenes/catamarcafauna.jpg" target="_blank"><img class="imgside" src="imagenes/catamarcafauna.jpg" alt="catamarca" ></a></figure>
+				<h4>Espacios naturales únicos</h4>
+			</aside>
+		
+
+		<div class="widget-1">
+			<h3><i><strong><span style="color:#FFF">"Las escuelas y centros comunitarios de Pilolil han jugado un papel importante en preservar su patrimonio cultural sobreviviendo a varios desafíos climáticos y económicos a lo largo de su historia."</span></strong></i></h3>
+		</div>
+		<div class="widget-2">
+			<h3><i><strong><span style="color:#FFF">"Las rutas comerciales que pasaban por Pilolil fueron cruciales para su desarrollo económico en el siglo XX. Hoy en día, se conservan muchas de sus construcciones históricas, reflejando su rica herencia cultural."</span></strong></i></h3>
+		</div>
+		<footer class="footer">
+			<div class="grupo-1">
+				<div class="box">
+					<figure><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d49196.025706574976!2d-70.92348682914765!3d-39.58774819259928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1715813926980!5m2!1sen!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></figure>
+				</div>
+				
+					<div class="box">
+						<h2>SOBRE NOSOTROS</h2>
+						<p class="piee">Nos dedicamos a ofrecer a nuestros clientes una experiencia única y acogedora en medio de la naturaleza</p>
+						<P>Bienvenidos a nuestro rincón de paz!</P>	
+					</div>
+				<div class="box">
+					<H2>SIGUENOS</H2>
+					<div class="social">
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-instagram"></a>
+						<a href="#" class="fa fa-x"></a>
+						<a href="#" class="fa fa-youtube"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="grupo-2">
+				<small>&copy; 2024 <b>Complejo Alpino</b> - Todos los derechos reservados.</small>
+			</div>
+		</footer>
+		
+	</div>
+	<script src="https://kit.fontawesome.com/cea1cc0078.js" crossorigin="anonymous"></script>
+	<script src="js/menu.js"></script>
+</body>
+</html>
